@@ -1,0 +1,31 @@
+\begin{circuitikz}[american]
+
+% Op-amp
+\draw (4,2) node[op amp, yscale=-1] (opamp) {};
+
+% R1 and R2 voltage divider to non-inverting input
+\draw (0,4) to[R, l=$R_2$] (0,2)
+      to[short] (0,2) -- (1.5,2)
+      to[short] (1.5,2) -- (1.5,3)
+      to[R, l=$R_1$] (1.5,5) -- (opamp.+);
+
+% Feedback path: from output to inverting input
+\draw (opamp.out) -- (6,2) to[R, l=$R_3$] (6,0)
+      to[C, l_=$C_1$] (3.5,0) -- (3.5,2) -- (opamp.-);
+
+% Output
+\draw (6,2) -- (7,2) node[right] {Output};
+
+% Ground
+\draw (0,4) -- ++(-0.5,0) node[ground]{};
+\draw (0,0) node[ground]{};
+
+% Lower path: R4 and C2 in parallel
+\draw (0,2) -- (0,-1.5);
+\draw (0,-1.5) to[R, l=$R_4$] (2,-1.5) -- (2,0);
+\draw (0,-1.5) to[C, l_=$C_2$] (2,-1.5);
+
+% Label node for connection clarity
+\draw (0,2) -- (0,0);
+
+\end{circuitikz}

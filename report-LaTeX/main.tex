@@ -1,0 +1,79 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{float}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{cleveref}
+\usepackage[siunitx]{circuitikz}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Quadrature Down Converter\\
+\thanks{International Institute of Information Technology, Hyderabad}
+}
+
+\author{\IEEEauthorblockN{Siddharth Sinha}
+\IEEEauthorblockA{\textit{IIIT Hyderabad}\\
+2024112011\\
+Hyderabad, India \\
+siddharth.sin@research.iiit.ac.in}
+\and
+\IEEEauthorblockN{Shashwat Mukadam}
+\IEEEauthorblockA{
+\textit{IIIT Hyderabad}\\
+2024102008\\
+Hyderabad, India \\
+shashwat.mukadam@students.iiit.ac.in}
+\and
+\IEEEauthorblockN{Animish Sharma}
+\IEEEauthorblockA{
+\textit{IIIT Hyderabad}\\
+2024102015\\
+Hyderabad, India \\
+animish.sharma@students.iiit.ac.in}
+}
+\maketitle
+
+\begin{abstract}
+Ideation, formulation, analysis and the simulation of the Quadrature down converter.
+Quadrature down converter is a device which takes in an input signal modulates it with an in-phase (Phase Difference = 0$^\circ$) wave and a Quadrature (Phase Difference = 90$^\circ$) wave to modulate it for transmission. 
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+\input{sec/intro}
+
+\section{The Quadrature Oscillator}
+\label{sec:quadrature_osci}
+\input{sec/quadrature_osci}
+
+\section{The Mixer}
+\label{sec:mixer}
+\input{sec/mixer}
+
+\section{The Low Pass Filter}
+\label{sec:low_pass_filter}
+\input{sec/low_pass_filter}
+
+\section{Combined Results}
+\label{sec:result}
+\input{sec/result}
+
+\section{Acknowledgement}
+The Authors of this paper would like to thank International
+Institute of Information Technology, Hyderabad for the sponsored access to several scientific websites like IEEE. Thanks
+are given to Prof. Zia Abbas for providing support
+and this platform to study and present ideas on this topic.
+The authors also give thanks to the teaching assistants of the
+Analog Electronic Circuits course of the Institute for their help
+and useful comments on the paper.
+
+
+
+\end{document}
