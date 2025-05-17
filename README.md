@@ -3,7 +3,7 @@
 
 - [@sidd-zeppelin](https://github.com/sidd-zeppelin)
 - [@Animish-Sharma](https://github.com/Animish-Sharma)
-- [@Shashwat]( )
+- [@Shashwat-11](https://github.com/Shashwat-11)
 
 
 # Quadrature Down Converter
